@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BloxStore | Loja Oficial de Colecionáveis Roblox</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+  <!-- Cabeçalho com Navegação -->
+  <header class="topo-loja">
+    <div class="container cabecalho-flex">
+      <div class="logo-area">
+        
+        <img 
+              src="logo.png" width="200"
+              alt="Boneco articulado do personagem" 
+              class="foto-topo">
+        <span class="subtitulo"></span>
+      </div>
+      <nav aria-label="Menu principal">
+        <ul class="menu-links">
+          <li><a href="#catalogo">Catálogo</a></li>
+          <li><a href="#vantagens">Vantagens</a></li>
+          <li><a href="#encomenda">Fazer Pedido</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Banner Principal -->
+    <section class="banner-hero" aria-labelledby="titulo-banner">
+      <div class="banner-texto">
+        <span class="selo-destaque">NOVA COLEÇÃO 2026</span>
+        <h2 id="titulo-banner">Os personagens clássicos do Roblox direto para a sua estante!</h2>
+        <p>Bonecos articulados com acabamento premium e código exclusivo para resgatar itens virtuais no jogo.</p>
+        <a href="#catalogo" class="botao-link">Ver Coleção</a>
+      </div>
+    </section>
+
+    <!-- Vitrine de Produtos em Grade -->
+    <section id="catalogo" class="secao-vitrine">
+      <h2>Catálogo de Bonecos</h2>
+      
+      <div class="grade-produtos">
+        <!-- Produto 1 -->
+        <article class="card-produto">
+          <span class="etiqueta">Mais Vendido</span>
+          <div class="area-imagem">
+            <img 
+              src="01.png" 
+              alt="Boneco articulado do personagem Noob clássico do Roblox com tronco azul, cabeça e braços amarelos e pernas verdes" 
+              class="foto-produto"
+            >
+          </div>
+          <div class="info-produto">
+            <h3>Noob Clássico</h3>
+            <p class="descricao-curta">O visual mais icônico do Roblox. Acompanha bloco de construção e código virtual.</p>
+            <p class="preco">R$ 49,90</p>
+            <a href="#encomenda" class="botao-comprar">Encomendar</a>
+          </div>
+        </article>
+
+        <!-- Produto 2 -->
+        <article class="card-produto">
+          <span class="etiqueta">Edição Especial</span>
+          <div class="area-imagem">
+            <img 
+              src="02.png" 
+              alt="Boneco articulado do personagem Bacon Hair do Roblox com cabelo castanho texturizado, jaqueta preta e calça azul" 
+              class="foto-produto"
+            >
+          </div>
+          <div class="info-produto">
+            <h3>Bacon Hair (Pal Hair)</h3>
+            <p class="descricao-curta">Cabelo texturizado removível, jaqueta preta detalhada e acessório exclusivo.</p>
+            <p class="preco">R$ 59,90</p>
+            <a href="#encomenda" class="botao-comprar">Encomendar</a>
+          </div>
+        </article>
+
+        <!-- Produto 3 -->
+        <article class="card-produto">
+          <span class="etiqueta">Raro</span>
+          <div class="area-imagem">
+            <img 
+              src="03.png" 
+              alt="Boneco articulado do personagem Guest do Roblox com boné preto e vermelho, camisa preta e calça azul" 
+              class="foto-produto"
+            >
+          </div>
+          <div class="info-produto">
+            <h3>Guest Clássico</h3>
+            <p class="descricao-curta">Homenagem nostálgica aos jogadores convidados. Edição limitada numerada.</p>
+            <p class="preco">R$ 69,90</p>
+            <a href="#encomenda" class="botao-comprar">Encomendar</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Barra de Diferenciais da Loja -->
+    <section id="vantagens" class="cartao barra-vantagens" aria-label="Vantagens da loja">
+      <div class="vantagem-item">
+        <h3>Envio Seguro</h3>
+        <p>Embalagem reforçada para não amassar a caixa do colecionador.</p>
+      </div>
+      <div class="vantagem-item">
+        <h3>Código Virtual</h3>
+        <p>Todos os bonecos acompanham código raspável oficial.</p>
+      </div>
+      <div class="vantagem-item">
+        <h3>Garantia BloxStore</h3>
+        <p>Troca gratuita em até 7 dias após o recebimento.</p>
+      </div>
+    </section>
+
+    <!-- Formulário de Checkout / Encomenda -->
+    <section id="encomenda" class="cartao secao-checkout">
+      <h2>Finalizar Encomenda</h2>
+      <p>Preencha seus dados abaixo para reservar seu colecionável:</p>
+
+      <form>
+        <div class="linha-formulario">
+          <div class="campo-grupo">
+            <label for="nome-usuario">Nome Completo:</label>
+            <input type="text" id="nome-usuario" required minlength="3" aria-describedby="dica-nome" placeholder="Ex: João Silva">
+            <small id="dica-nome">Digite seu nome completo (mínimo de 3 letras).</small>
+          </div>
+
+          <div class="campo-grupo">
+            <label for="email-usuario">E-mail para contato:</label>
+            <input type="email" id="email-usuario" required placeholder="seuemail@exemplo.com">
+          </div>
+        </div>
+
+        <fieldset>
+          <legend>1. Selecione o Modelo Desejado:</legend>
+          <div class="opcao-radio">
+            <input type="radio" id="op1" name="boneco" value="noob" required>
+            <label for="op1">Noob Clássico — <strong>R$ 49,90</strong></label>
+          </div>
+          <div class="opcao-radio">
+            <input type="radio" id="op2" name="boneco" value="bacon">
+            <label for="op2">Bacon Hair (Pal Hair) — <strong>R$ 59,90</strong></label>
+          </div>
+          <div class="opcao-radio">
+            <input type="radio" id="op3" name="boneco" value="guest">
+            <label for="op3">Guest Clássico — <strong>R$ 69,90</strong></label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>2. Opcionais e Proteção:</legend>
+          <div class="opcao-check">
+            <input type="checkbox" id="check1" name="extras" value="caixa-acrilico">
+            <label for="check1">Caixa expositora de acrílico anti-poeira (+ R$ 15,00)</label>
+          </div>
+          <div class="opcao-check">
+            <input type="checkbox" id="check2" name="extras" value="embrulho-presente">
+            <label for="check2">Embrulho especial para presente (Grátis)</label>
+          </div>
+        </fieldset>
+
+        <div class="campo-grupo">
+          <label for="quantidade">Quantidade:</label>
+          <input type="number" id="quantidade" name="quantidade" min="1" max="10" value="1" required>
+        </div>
+
+        <button type="submit" class="botao-finalizar">Confirmar Pedido</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="rodape-loja">
+    <div class="container">
+      <p><strong>BloxStore Colecionáveis</strong> — Projeto fictício de e-commerce.</p>
+      <p>Desenvolvido com foco em acessibilidade e semântica web.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
